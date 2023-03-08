@@ -1,5 +1,5 @@
 
-fetch('https://xmt0mebg05.execute-api.us-east-2.amazonaws.com/default/api-gateway-updated', {
+fetch('https://3rpncwqyca.execute-api.us-east-2.amazonaws.com/default/api-gateway', {
     method: 'POST',
 })
 .then(response => response.json())
