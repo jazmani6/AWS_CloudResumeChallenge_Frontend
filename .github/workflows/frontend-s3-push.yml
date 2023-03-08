@@ -20,10 +20,10 @@ jobs:
         AWS_REGION: ${{ env.AWS_REGION }}
   
   cloudfront:
-  - name: Invalidate CloudFront
+    name: Invalidate CloudFront
     runs-on: ubuntu-latest
-    
-    uses: chetan/invalidate-cloudfront-action@v2
+    steps:
+    - uses: chetan/invalidate-cloudfront-action@v2
     env:
       DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
       PATHS: "/*"
