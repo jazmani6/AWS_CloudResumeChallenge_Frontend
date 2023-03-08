@@ -1,9 +1,13 @@
-name: Update s3 configuration
+name: 'Update s3 configuration'
 
 on:
   push:
     branches:
-    - main
+      [ "main" ]
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   deploy:
